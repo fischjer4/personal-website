@@ -1,7 +1,6 @@
 /*!
- * Start Bootstrap - TeamSolutions v1.0.0 ()
- * Copyright 2013-2017 
- * Licensed under MIT (https://github.com/BlackrockDigital/team-solutions/blob/master/LICENSE)
+ * JeremyFischer v1.0.0 ()
+ * Licensed under MIT (https://github.com/BlackrockDigital/jeremy-fischer/blob/master/LICENSE)
  */
 body {
   overflow-x: hidden;
@@ -164,7 +163,7 @@ body {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../images/teamWorkHeader.jpg");
+  background-image: url("../images/mountHood.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
