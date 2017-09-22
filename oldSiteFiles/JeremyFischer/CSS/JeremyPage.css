@@ -1,0 +1,46 @@
+
+main{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.OSUBand {
+  bottom: 0;
+  width: 100%;
+  margin: 10px;
+  background-image: url("../Images/OSUPic.png");
+  text-align: center;
+}
+.mdl-layout__title{
+	background-color: #2196F3; 
+	color: white;
+	font: roboto-regular;
+}
+td > div{
+  margin: 10px ! important;
+}
+nav > a{
+  color: white ! important;
+}
+.playerBut{
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  margin: 0 auto; 
+  left: 0px;
+}
+.mdl-navigation__link:hover{
+  background-color: #2196F3 ! important;
+  opacity: .4 ! important;
+  color: white ! important;
+}
+.title-txt-color{
+  color: #2196F3 ! important;
+}
+.section-card-size{
+  width: 100%; 
+}
+.align-card{
+  display: inline-block ! important;
+  margin: 7px;
+}
