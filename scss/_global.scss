@@ -36,7 +36,6 @@ hr.primary{
 
 .align-normal{
   text-align: left;
-  text-indent: 3mm;
   margin-left: 20px;
 }
 
@@ -123,8 +122,12 @@ body {
 
 // default
 .bs-callout-default {
-    border-color: $gray-light;
+    border-color: $green-light;
 }
 .bs-callout-default h4 {
-    color: $gray-light;
+    color: $green-light;
+}
+.my-card-heading {
+  margin: 15px 0;
+  text-transform: none;
 }

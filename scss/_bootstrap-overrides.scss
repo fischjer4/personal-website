@@ -17,3 +17,12 @@
   @include button-variant(white, $theme-primary, $theme-primary);
   @include heading-font;
 }
+.btn-md {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin-top: 1em;
+  border-radius: 3px;
+  @include button-variant(white, $theme-primary, $theme-primary);
+  @include heading-font;
+}

@@ -1,5 +1,6 @@
 # teamSolutions.github.io
-`npm install` and then run `gulp dev`
+`npm install`
+`npm -g install gulp`  and then run `gulp dev`
 
 #### Gulp Tasks
 
@@ -9,3 +10,6 @@
 - `gulp minify-css` minifies the compiled CSS file
 - `gulp minify-js` minifies the themes JS file
 - `gulp copy` copies dependencies from node_modules to the vendor directory
+
+#### Picture Sizes
+Thumbnail size is 400 x 300

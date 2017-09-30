@@ -3,7 +3,12 @@
 
 header.masthead {
   text-align: center;
-  color: white;
+  color: $green-dark;
+  text-shadow:
+    -1px -1px 0 $theme-primary,
+    1px -1px 0 $theme-primary,
+    -1px 1px 0 $theme-primary,
+    1px 1px 0 $theme-primary;
   background-image: url('../images/mountHood.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
