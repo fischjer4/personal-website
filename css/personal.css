@@ -170,7 +170,7 @@ header.masthead {
   background-image: url("../images/mountHood.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: center 33%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
