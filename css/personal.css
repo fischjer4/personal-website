@@ -69,8 +69,8 @@ body {
   -webkit-tap-highlight-color: #3498DB; }
 
 .bs-callout-left {
-  padding: 20px;
-  margin: 20px 0;
+  padding: 10px;
+  margin: 10px 0;
   border-left: 1px solid #eee;
   border-left-width: 5px;
   border-radius: 3px; }
@@ -102,7 +102,7 @@ body {
   color: #3498DB; }
 
 .bs-callout-default {
-  border-color: #f6fbfb; }
+  border-left-color: #95d4ce; }
 
 .bs-callout-default h4 {
   color: #f6fbfb; }
@@ -530,7 +530,10 @@ section#contact {
     margin-top: 0; }
 
 footer {
-  padding: 25px 0;
+  padding: 15px 0;
+  font-size: 50%;
+  color: white;
+  background-color: #3d3d3d;
   text-align: center; }
   footer span.copyright {
     font-size: 90%;
