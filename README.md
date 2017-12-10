@@ -1,4 +1,4 @@
-# teamSolutions.github.io
+# Steps To Run Locally
 `npm install`
 `npm -g install gulp`  and then run `gulp dev`
 
