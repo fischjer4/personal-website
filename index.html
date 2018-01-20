@@ -32,6 +32,13 @@
 	  gtag('js', new Date());
 
 	  gtag('config', 'UA-102279796-1');
+
+	  window.onbeforeunload = closingCode;
+		function closingCode(){
+			console.log("Made it");
+			ga('send', 'pageview');
+			return null;
+		}
 	</script>
 	
 </head>
