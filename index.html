@@ -21,9 +21,12 @@
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" media="screen">
+
 	<!-- Custom styles for this template -->
-	<link href="css/personal.min.css" rel="stylesheet">
-	
+	<link href="css/personal.css" rel="stylesheet">
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102279796-1"></script>
 	<script>
@@ -40,21 +43,24 @@
 			return null;
 		}
 	</script>
-	
+
 </head>
 
 <body id="page-top">
-
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 		<div class="container">
 			<a class="navbar-brand js-scroll-trigger" href="#page-top">Jeremy Fischer</a>
-			<button class="navbar-toggler navbar-toggler-right" 
-					type="button" 
-					data-toggle="collapse" 
+			<button class="navbar-toggler navbar-toggler-right"
+					type="button"
+					data-toggle="collapse"
 					data-target="#navbarResponsive"
-					aria-controls="navbarResponsive" 
-					aria-expanded="false" 
+					aria-controls="navbarResponsive"
+					aria-expanded="false"
 					aria-label="Toggle navigation">
 				Menu
 				<i class="fa fa-bars"></i>
@@ -88,8 +94,9 @@
 	<header class="masthead">
 		<div class="container">
 			<div class="intro-text">
-				<div class="intro-heading">Jeremy Fischer</div>
-				<a class="btn btn-xl js-scroll-trigger" href="#whoIAm">Who I am</a>
+				<!-- <a href="#whoIAm" class="btn btn-primary btn-sm active js-scroll-trigger" role="button" aria-pressed="true">
+					Who I am
+				</a> -->
 			</div>
 		</div>
 	</header>
@@ -98,7 +105,7 @@
 	<section class="bg-light" id="whoIAm">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 text-center">
+				<div class="col-lg-12 text-center wow bounceInUp">
 					<h2 class="section-heading">Who I Am</h2>
 					<h3 class="section-subheading text-muted">From farmer to software engineer</h3>
 				</div>
@@ -109,57 +116,33 @@
 
 				<div class="col-sm-10">
 					<div class="jeremy-member">
-						<img class="mx-auto rounded-circle" src="images/jeremy/Jeremy.jpg" alt="">
+						<img class="mx-auto rounded-circle" src="images/jeremy/me.jpg" alt="">
 						<h4>Jeremy Fischer</h4>
 						<p class="text-muted">
-							I’m from a small farming community where I spent my summers 
+							I’m from a small farming community where I spent my summers
 							working on our family fruit orchard. There's a joke that goes
-							like this, “Do you know how to make a small fortune farming? 
+							like this, “Do you know how to make a small fortune farming?
 							Start out with a large fortune!” That’s because being
-							a farmer is hard work and depending on the year it doesn’t 
-							always pay off. On a farm you are always trying to find the most efficient use of 
+							a farmer is hard work and depending on the year it doesn’t
+							always pay off. On a farm you are always trying to find the most efficient use of
 							resources and figuring out how to fix broken equipment. I believe
 							this is where my ingenuity and strong work ethic came from.
 						</p>
 						<p class="text-muted">
-							I spent my winters at the ski resort 30 minutes from my 
-							home working as a ski and snowboard instructor. People from across the globe 
+							I spent my winters at the ski resort 30 minutes from my
+							home working as a ski and snowboard instructor. People from across the globe
 							come to Mt. Hood to work or to recreate, so I interacted
-							with people having all different personalities, 
+							with people having all different personalities,
 							temperaments and cultural backgrounds.
 						</p>
-						<p class="text-muted">
-							I’ve always been an active individual and throughout 
-							my younger years I was a wrestler and a football player. It was
-							there that I learned the value of team. My experience 
-							was further enhanced as the team captain where I acquired an
-							understanding of the importance of strong leadership and 
-							personal sacrifice for the sake of the greater good.
-						</p>
-						<p class="text-muted">
-							I stumbled upon technology when I took a StRUT (Student 
-							use of Recycled Technology) class in high school. This class was
-							more hardware based than software and mainly consisted of 
-							tinkering with Arduinos and dismantling broken computers.
-							I became enlightened to what technology can do for people. 
-							I began researching career paths that involve technology.
-							After exploring all options, I knew that I belonged in the 
-							Computer Science field. The fact that in Computer Science
-							I can design, create, be the mastermind behind a solution 
-							that impacts people’s lives and really see it come to life
-							excites me!
-						</p>
 						<p class="large text-muted">
-							I’m in my final year now at Oregon State University 
-							and have been loving every bit of it. I have taken advantage of every
-							opportunity I have encountered here at OSU and have 
-							been fortunate enough to be a part of the Engineering Leadership
-							Academy and Oregon State’s ACM Student Chapter.
+							I graduate from Oregon State University in December 2018 and
+							I'm currently looking for full time software engineering opportunities.
 						</p>
 						<ul class="list-inline social-buttons">
 							<li class="list-inline-item">
-								<a 
-									target="_blank" 
+								<a
+									target="_blank"
 									href="https://www.linkedin.com/in/jeremyjfischer/">
 									<i class="fa fa-linkedin"></i>
 								</a>
@@ -175,13 +158,13 @@
 	<section id="education">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 text-center">
+				<div class="col-lg-12 text-center animated wow bounceInDown">
 					<h2 class="section-heading">Education</h2>
-					<h3 class="section-subheading text-muted">Here is a look at my schooling thus far.</h3>
+					<h3 class="section-subheading text-muted">Oregon State University</h3>
 				</div>
 			</div>
 			  <div class="row text-center">
-				<div class="col-md-4">
+				<div class="col-md-6 wow bounceInLeft">
 					<img class="img-fluid" src="images/projects/OSUPic.png" alt="">
 					<h4 class="service-heading">Undergraduate</h4>
 					<div>
@@ -193,7 +176,7 @@
 						<p class="text-muted">
 							<b>GPA</b>
 							<br>
-							3.84
+							3.80
 						</p>
 						<p class="text-muted">
 							<b>Expected Graduation</b>
@@ -202,29 +185,17 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-6 wow bounceInRight">
 					<img class="img-fluid" src="images/projects/OSUPic.png" alt="">
-					<h4 class="service-heading">Completed Coursework</h4>
+					<h4 class="service-heading">Elective Coursework</h4>
 					<ul class="text-muted list-unstyled">
-						<li>Analysis of Algorithms</li>
-						<li>Data Structures</li>
-						<li>Software Engineering 1 &amp; 2</li>
-						<li>Operating Systems 1 &amp; 2</li>
-						<li>Databases</li>
-						<li>Theory of Computation</li>
-						<li>Physics I, II, &amp; III</li>
-						<li>Calculus I, II, &amp; III</li>
-					</ul>
-				</div>
-				<div class="col-md-4">
-					<img class="img-fluid" src="images/projects/OSUPic.png" alt="">
-					<h4 class="service-heading">Completed Coursework By Graduation</h4>
-					<ul class="text-muted list-unstyled">
-						<li>Machine Learning and Data Mining</li>
-						<li>Intro to Computer Networks</li>
+						<li>Cloud Development</li>
 						<li>Translators</li>
-						<li>Intro to AI</li>
-						<li>Cloud and Mobile Development</li>
+						<li>Intro To AI</li>
+						<li>Parallel Programming</li>
+						<li>Environmental Economics And Policy</li>
+						<li>Public Speaking</li>
+						<li>Soil Science</li>
 					</ul>
 				</div>
 			  </div>
@@ -235,7 +206,7 @@
 	<section class="bg-light" id="workExperience">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 text-center">
+				<div class="col-lg-12 text-center wow bounceInRight">
 					<h2 class="section-heading">My Experience</h2>
 					<h3 class="section-subheading text-muted">Take a look at my work experience.</h3>
 				</div>
@@ -243,45 +214,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<ul class="timeline">
-						<li>
-							<div class="timeline-image">
-								<img class="rounded-circle img-fluid" src="images/experience/sanFran.jpg" alt="">
-							</div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h4>Autodesk</h4>
-									<span>Summer 2017</span>
-									<br>
-									<span><i>San Francisco, CA</i></span>
-								</div>
-								<div class="timeline-body">
-									<p class="text-muted">As a member of the <i>Digital Manufacturing Group Cloud Services</i> team,
-										I worked on the Form Builder for Autodesk's Manufacturing Data Service
-									</p>
-									<a class="btn btn-md" data-toggle="modal" href="#autodeskSanFran">Learn More</a>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted">
-							<div class="timeline-image">
-								<img class="rounded-circle img-fluid" src="images/experience/portland.jpg" alt="">
-							</div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h4>Autodesk </h4>
-									<span>Summer 2016</span>
-									<br>
-									<span><i>Portland, OR</i></span>
-								</div>
-								<div class="timeline-body">
-									<p class="text-muted">I worked in the <i>Strategy and Research</i> team
-										where I created a simulation assistant with a teammate.
-									</p>
-									<a class="btn btn-md" data-toggle="modal" href="#autodeskPortland">Learn More</a>
-									
-								</div>
-							</div>
-						</li>
+
 						<li>
 							<div class="timeline-image">
 								<img class="rounded-circle img-fluid" src="images/experience/osuDorm.jpg" alt="">
@@ -301,9 +234,71 @@
 								</div>
 							</div>
 						</li>
+
 						<li class="timeline-inverted">
 							<div class="timeline-image">
-								<h4>Be Part
+								<img class="rounded-circle img-fluid" src="images/experience/portland.jpg" alt="">
+							</div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4>Autodesk </h4>
+									<span>Summer 2016</span>
+									<br>
+									<span><i>Portland, OR</i></span>
+								</div>
+								<div class="timeline-body">
+									<p class="text-muted">I worked in the <i>Strategy and Research</i> team
+										where I created a simulation assistant with a teammate.
+									</p>
+									<a class="btn btn-md" data-toggle="modal" href="#autodeskPortland">Learn More</a>
+
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="timeline-image">
+								<img class="rounded-circle img-fluid" src="images/experience/sanFran17.jpg" alt="">
+							</div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4>Autodesk</h4>
+									<span>Summer 2017</span>
+									<br>
+									<span><i>San Francisco, CA</i></span>
+								</div>
+								<div class="timeline-body">
+									<p class="text-muted">As a member of the <i>Digital Manufacturing Group Cloud Services</i> team,
+										I worked on the Form Builder for Autodesk's Manufacturing Data Service
+									</p>
+									<a class="btn btn-md" data-toggle="modal" href="#autodeskSanFran17">Learn More</a>
+								</div>
+							</div>
+						</li>
+
+						<li class="timeline-inverted">
+							<div class="timeline-image">
+								<img class="rounded-circle img-fluid" src="images/experience/sanFran18.jpg" alt="">
+							</div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4>Autodesk</h4>
+									<span>Summer 2018</span>
+									<br>
+									<span><i>San Francisco, CA</i></span>
+								</div>
+								<div class="timeline-body">
+									<p class="text-muted">As a member of the <i>Cloud Platform, Manufacturing and Factory Services</i> team,
+										I implemented a content recommendation engine for Autodesk's Community Service
+									</p>
+									<a class="btn btn-md" data-toggle="modal" href="#autodeskSanFran18">Learn More</a>
+								</div>
+							</div>
+						</li>
+
+						<li class="timeline-inverted wow animated bounceIn" data-wow-delay=".5s">
+							<div class="timeline-image">
+								<h4>Be A Part
 									<br>Of My
 									<br>Story!</h4>
 							</div>
@@ -318,108 +313,120 @@
 	<section id="projectsAndInvolvement">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 text-center">
+
+				<div class="col-lg-12 animated text-center wow bounceInLeft">
 					<h2 class="section-heading">Projects &amp; Involvement</h2>
 					<h3 class="section-subheading text-muted">Here's a look at my involvement and a few of the projects I've created</h3>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-6 projects-item">
+
+				<div class="col-md-4 col-sm-6 projects-item animated wow bounceInUp">
+					<a class="projects-link" data-toggle="modal" href="#smartFarm">
+						<div class="project-item">
+							<div class="project-item-preview">
+								<img class="img-fluid" src="images/projects/smartFarm-thumb.jpg" alt="">
+							</div>
+							<div class="project-item-description">
+								<h4>Smart Farm RESTful API</h4>
+								<p>
+									RESTful API for a farm that monitors soil,
+									irrigation, and temperature
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 projects-item animated wow bounceInDown" >
+					<a class="projects-link" data-toggle="modal" href="#kora">
+						<div class="project-item">
+							<div class="project-item-preview">
+								<img class="img-fluid" src="images/projects/kora-thumb.jpg" alt="">
+							</div>
+							<div class="project-item-description">
+								<h4>Kora Voice Assistant</h4>
+								<p>
+									Voice assistant for Autodesk's Fusion 360
+									3-D modeling software
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 projects-item animated wow bounceInUp">
+					<a class="projects-link" data-toggle="modal" href="#translator">
+						<div class="project-item">
+							<div class="project-item-preview">
+								<img class="img-fluid" src="images/projects/translator-thumb.png" alt="">
+							</div>
+							<div class="project-item-description">
+								<h4>Python To C&#43;&#43; Translator</h4>
+								<p>Translates a subset of Python into C&#43;&#43;</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 projects-item animated wow bounceInLeft">
+					<a class="projects-link" data-toggle="modal" href="#sentimentAnalysis">
+						<div class="project-item">
+							<div class="project-item-preview">
+								<img class="img-fluid" src="images/projects/sentimentAnalysis-thumb.jpg" alt="">
+							</div>
+							<div class="project-item-description">
+								<h4>Sentiment Analyzer</h4>
+								<p>
+									A program that determines whether a sentence is positive or negative
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 projects-item animated wow bounceInUp">
+					<a class="projects-link" data-toggle="modal" href="#bestFitSlob">
+						<div class="project-item">
+							<div class="project-item-preview">
+								<img class="img-fluid" src="images/projects/bestFit-thumb.png" alt="">
+							</div>
+							<div class="project-item-description">
+								<h4>Linux Kernel's SLOB Best Fit</h4>
+								<p>
+									Turned the SLOB's <i>first-fit</i>
+									algorithm to a <i>best-fit</i>
+									algorithm
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 projects-item wow animated bounceInRight">
 					<a class="projects-link" data-toggle="modal" href="#leadershipAcademy">
-						<div class="projects-hover">
-							<div class="projects-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
+						<div class="project-item">
+							<div class="project-item-preview">
+								<img class="img-fluid" src="images/projects/leadershipAca-thumb.png" alt="">
+							</div>
+							<div class="project-item-description">
+								<h4>Leadership Academy</h4>
+								<p>
+									The Leadership Academy helps develop
+									engineer's Leadership and interpersonal skills
+								</p>
 							</div>
 						</div>
-						<img class="img-fluid" src="images/projects/leadershipAca-thumb.png" alt="">
 					</a>
-					<div class="projects-caption">
-						<h4>Leadership Academy</h4>
-					</div>
 				</div>
-
-				<div class="col-md-4 col-sm-6 projects-item">
-					<a class="projects-link" data-toggle="modal" href="#OTP">
-						<div class="projects-hover">
-							<div class="projects-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img class="img-fluid" src="images/projects/otpEncryption-thumb.png" alt="">
-					</a>
-					<div class="projects-caption">
-						<h4>One-Time Pad Encryption</h4>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 projects-item">
-					<a class="projects-link" data-toggle="modal" href="#soundTunnel">
-						<div class="projects-hover">
-							<div class="projects-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img class="img-fluid" src="images/projects/soundTunnel-thumb.png" alt="">
-					</a>
-					<div class="projects-caption">
-						<h4>Sound Tunnel</h4>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 projects-item">
-					<a class="projects-link" data-toggle="modal" href="#foodDelivery">
-						<div class="projects-hover">
-							<div class="projects-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img class="img-fluid" src="images/projects/foodDelivery-thumb.png" alt="">
-					</a> 
-					<div class="projects-caption">
-						<h4>Food Delivery Site</h4>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 projects-item">
-					<a class="projects-link" data-toggle="modal" href="#quackHacks">
-						<div class="projects-hover">
-							<div class="projects-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img class="img-fluid" src="images/projects/quackHacks-thumb.png" alt="">
-					</a>
-					<div class="projects-caption">
-						<h4>Quack Hacks</h4>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 projects-item">
-					<a class="projects-link" data-toggle="modal" href="#rps">
-						<div class="projects-hover">
-							<div class="projects-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img class="img-fluid" src="images/projects/rps-thumb.png" alt="">
-					</a>
-					<div class="projects-caption">
-						<h4>Rock, Paper, Scissors</h4>
-					</div>
-				</div>
-
-				
-
 
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- Resume -->
 	<section class="bg-light" id="resume">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 text-center">
+				<div class="col-lg-12 text-center wow bounceInDown">
 					<h2 class="section-heading">Resume</h2>
 					<h3 class="section-subheading text-muted">Take a look at my resume</h3>
 				</div>
@@ -454,7 +461,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 
 
 
@@ -468,6 +475,356 @@
 
 
 <!-- Project and Involvement Modals -->
+	<!-- Smart Farm API -->
+	<div class="projects-modal modal fade" id="smartFarm" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2>Smart Farm RESTful API</h2>
+								<p class="item-intro text-muted">
+									RESTful API for a farm that monitors soil,
+									irrigation, and temperature
+								</p>
+								<img class="img-fluid d-block mx-auto" src="images/modals/smartFarm-full.jpg" alt="">
+								<div class="row">
+									<b>Technologies:</b>
+									<span class="badge badge-pill badge-info m-1">Node.js</span>
+									<span class="badge badge-pill badge-info m-1">Express</span>
+									<span class="badge badge-pill badge-info m-1">Docker</span>
+									<span class="badge badge-pill badge-info m-1">MongoDB</span>
+									<span class="badge badge-pill badge-info m-1">RESTful</span>
+									<span class="badge badge-pill badge-info m-1">JWT</span>
+								</div>
+								<hr>
+								<div class="col-sm-12 pull-right">
+									<span class="pull-right">
+										<small><b>*</b>bold represents an entity in the API</small>
+									</span>
+								</div>
+								<p>
+									The purpose of this RESTful API is to serve as the back-end for a Smart
+									Farm system. The server is a Docker containerized Node.js and Express app,
+									that utilizes JSON Web Tokens (JWT) to authenticate users, and MongoDB
+									as its data store. The system as a whole has three types of <b>sensors</b>:
+									<b>temperature</b>, <b>irrigation</b>, and <b>soil</b>. A varying number of these sensors
+									are placed in each <b>block</b> on a fruit <b>farm</b>. The sensors send data to
+									the server to be stored. As of now, irrigation sensors send the time
+									irrigation was started and the time the water was stopped. Soil sensors
+									send the volumetric water content, electrical conductivity, and the soil
+									temperature. Temperature sensors send the temperature of the air. <b>Users</b>
+									must signup and login. There are three types of users: Admins, general
+									users, and sensors; each of which have different privileges within the API.
+								</p>
+								<p>
+									Users can retrieve important statistics about their farm,
+									such as the average irrigation time over the past month, the current
+									soil and temperature data, average soil and temperature data over the
+									past month, and more!
+								</p>
+
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+									Close Project
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Kora -->
+	<div class="projects-modal modal fade" id="kora" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2>Kora Voice Assistant</h2>
+								<p class="item-intro text-muted">
+								Voice assistant for Autodesk's Fusion 360
+								3-D modeling software</p>
+								<img class="img-fluid d-block mx-auto" src="images/modals/kora-full.jpg" alt="">
+								<div class="row">
+									<b>Technologies:</b>
+									<span class="badge badge-pill badge-info m-1">Python</span>
+									<span class="badge badge-pill badge-info m-1">WIT.ai</span>
+									<span class="badge badge-pill badge-info m-1">MongoDB</span>
+									<span class="badge badge-pill badge-info m-1">PyAudio</span>
+								</div>
+								<hr>
+								<p>
+									Kora is a proof of concept project that integrates a
+									natural language processing library into Autodesk's 3-D
+									computer aided design software, Fusion 360. Kora is a
+									speech-based virtual assistant for Fusion that lets
+									users perform a subset of tasks within the product
+									such as saving a document by verbally instructing it
+									to perform the task. Kora offers users a tool that
+									decreases the time required to achieve their goals
+									within Fusion by offering an interface that runs in
+									parallel with and complements the keyboard and mouse.
+								</p>
+								<p>
+									Since the inception of publicly available computers
+									until around 2006 society has interacted with computers
+									in the same manner – keyboard and mouse. Recently there’s
+									been a moving trend toward making computers and
+									machines more interactive. Nintendo launched the Wii
+									in 2006 and Microsoft’s XBOX division followed in 2010
+									with the Kinect. Apple launched Siri in 2010 and Microsoft
+									and Google followed shortly after with their smart assistants.
+									Autodesk realizes the competitive advantage of having their
+									products more interactive. This is what lead to Kora.
+								</p>
+								<p>
+									Autodesk has the opportunity to gain much more from
+									making their products more interactive than simply
+									retaining and attracting users due to the new ease of use.
+									From a data perspective, enabling natural language
+									processing allows for a new addition to user data that
+									is rich in potential! Instead of only collecting button
+									clicks on dropdown menus and ribbon items, with a voice
+									interface Autodesk would be able to collect exactly what
+									the user is intending to do. This form of data collection
+									rips away the ambiguity of the data.
+								</p>
+								<p>
+									<i>Kora was created by Austin Row and myself for our senior project.</i>
+								</p>
+
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+									Close Project
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Python to C&#43;&#43; -->
+	<div class="projects-modal modal fade" id="translator" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2>Python To C&#43;&#43; Translator</h2>
+								<p class="item-intro text-muted">
+									Translates a subset of Python into C&#43;&#43;
+								</p>
+								<img class="img-fluid d-block mx-auto" src="images/modals/translator-full.png" alt="">
+								<div class="row">
+									<b>Technologies:</b>
+									<span class="badge badge-pill badge-info m-1">Python</span>
+									<span class="badge badge-pill badge-info m-1">Flex</span>
+									<span class="badge badge-pill badge-info m-1">Bison</span>
+									<span class="badge badge-pill badge-info m-1">C&#43;&#43;</span>
+									<span class="badge badge-pill badge-info m-1">GraphViz</span>
+
+								</div>
+								<hr>
+								<p>
+									This project translates a small subset of the Python
+									programming language into the C&#43;&#43; programming language.
+									This translator consists of two major components:
+								</p>
+								<p>
+									<b>Scanner</b>
+									<br>
+										The scanner is in charge of reading the input characters
+										and creating a queue of tokens based off of them. A token
+										is a label for the read input character(s). For instance,
+										if <code>2018</code> was read, then the token <code>INTEGER</code> would be added
+										to the queue. To create the scanner I used a tool called
+										<i>Flex</i>. <i>Flex</i> is a tool that's widely-used for generating
+										scanners. To implement a scanner using <i>Flex</i>, you must
+										specify a set of regular expressions corresponding to
+										patterns in your source language along with a set of
+										actions to take when each of the patterns is matched.
+										For example, the regular expression <code>&#8722;?[0-9]&#43;</code> will match
+										any positive or negative integer. So, when a stream of
+										input characters matches that regular expression (pattern)
+										the token <code>INTEGER</code> is added to the queue. After running
+										the <i>Flex</i> scanner on the input my translator has a queue
+										of tokens that serves as input into the translators next
+										stage, the parser.
+								</p>
+								<p>
+									<b>Push-Parser</b>
+									<br>
+									The parser is in charge of consuming the tokens generated by the
+									scanner and performing an action based of the sequence of tokens.
+									For this I used a tool called <i>Bison</i> which easily integrates with <i>Flex</i>.
+									I created a Push-Parser, so that each time a token is generated in
+									the scanner, it is pushed to the parser for handling. I created a
+									Grammar that <i>Bison</i> uses to act on the tokens. Essentially, a
+									Grammar outlines what a certain sequence of tokens mean. So, if
+									we also have a <code>PLUS</code> token that represents a &#43; sign, then the
+									Grammar may specify the following: <code>INTEGER PLUS INTEGER</code>, which
+									tells the Grammar if it gets an <code>INTEGER</code> token followed by
+									<code>PLUS</code> token followed by another <code>INTEGER</code> token,
+									then perform some specified action.
+								</p>
+								<p>
+									In terms of my Python to C&#43;&#43; translator, my scanner consumes
+									Python code, generates tokens using regular expressions, pushes
+									the tokens to the Push-Parser, which then outputs the equivalent
+									C&#43;&#43; code.
+								</p>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+									Close Project
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Sentiment Aanalysis -->
+	<div class="projects-modal modal fade" id="sentimentAnalysis" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2>Sentiment Analyzer</h2>
+								<p class="item-intro text-muted">
+									A program that determines whether a sentence is positive or negative
+								</p>
+								<img class="img-fluid d-block mx-auto" src="images/modals/sentimentAnalysis-full.jpg" alt="">
+								<div class="row">
+									<b>Technologies:</b>
+									<span class="badge badge-pill badge-info m-1">Python</span>
+								</div>
+								<hr>
+								<p>
+									This project was my first look into Artificial Intelligence.
+									This program analyses sentences and determines whether they
+									have positive or negative sentiment. This was done by creating
+									a Naive Bayes classifier. The data that served as training input
+									was scraped and cleaned Yelp reviews. Once the program was trained,
+									users can type in a sentence and the program will say if the
+									sentence is positive or negative.
+								</p>
+
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+									Close Project
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Best Fit Slob -->
+	<div class="projects-modal modal fade" id="bestFitSlob" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2>Linux Kernel's SLOB Best Fit</h2>
+								<p class="item-intro text-muted">
+									Turned the SLOB's <i>first-fit</i>
+									algorithm to a <i>best-fit</i>
+									algorithm
+								</p>
+								<img class="img-fluid d-block mx-auto" src="images/modals/bestFit-full.png" alt="">
+								<div class="row">
+									<b>Technologies:</b>
+									<span class="badge badge-pill badge-info m-1">C&#43;&#43;</span>
+								</div>
+								<hr>
+								<p>
+									This project is based off of the Linux Yocto Project.
+									The Yocto Project is a Linux Foundation project whose goal is
+									to make Linux distributions for embedded software independent
+									of the underlying architecture of the embedded hardware. I changed
+									the SLOB’s first-fit algorithm to a best-fit algorithm.
+								</p>
+								<p>
+									SLOB stands for Simple List of Blocks and is one of the
+									three memory allocators for the Linux kernel (if you don’t
+									know what a kernel is, think of it as the operating system).
+									The SLOB is designed for embedded software systems, and it
+									is the default memory allocator in the Yocto Project. SLOB’s
+									greatest weakness is its high memory fragmentation. This is
+									because SLOB uses the first-fit algorithm for allocating memory.
+									The first-fit algorithm allocates the first location of memory
+									that is sufficient size for the needed memory, and doesn’t care
+									about memory efficiency. If we were playing Tetris, the
+									first-fit algorithm would just drop the tiles straight down,
+									and when the tiles stacked to the top it would shift to an
+									adjacent column and continue dropping tiles until that column
+									is full. Where, the best-fit algorithm would play Tetris the
+									way you’re supposed to. That is, placing the tiles (allocating
+									memory) in the most space efficient manner.
+								</p>
+								<p>
+									My findings were, well, what one would expect. The memory fragmentation
+									decreased drastically, however, the time it took to allocate memory
+									went up because the SLOB was now finding the best placement for the
+									memory instead of just grabbing the first available opening.
+								</p>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+									Close Project
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Leadership Academy -->
 	<div class="projects-modal modal fade" id="leadershipAcademy" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
@@ -484,36 +841,27 @@
 								<!-- Project Details Go Here -->
 								<h2>Leadership Academy</h2>
 								<p class="item-intro text-muted">
-									The Leadership Academy helps develop 
+									The Leadership Academy helps develop
 									engineer's Leadership and interpersonal skills
-								</p>								
-								<img class="img-fluid d-block mx-auto" src="images/modals/leadershipAca-full.png" alt="">
+								</p>
+								<img class="img-fluid d-block mx-auto" src="images/modals/leadershipAca-full.jpg" alt="">
 								<p>
-									New grads may be technically sound, but when it comes to 
-									leadership and people skills many are falling short. The 
-									Engineering Leadership Academy was developed by Scott Paja 
-									and Industry partners to address that problem. The program 
-									holds workshops for academy members hosted by successful 
-									industry leaders who share their perspective on leadership 
+									New grads may be technically sound, but when it comes to
+									leadership and people skills many are falling short. The
+									Engineering Leadership Academy was developed by Scott Paja
+									and Industry partners to address that problem. The program
+									holds workshops for academy members hosted by successful
+									industry leaders who share their perspective on leadership
 									development, communication skills, work ethic, and ultimately
-									what it takes to be an effective leader. 
+									what it takes to be an effective leader.
 								</p>
 								<hr>
 								<p>
-									I encourage you to learn more about the Leadership academy 
-									by exploring their site. 
-									<a href="http://leadership.engr.oregonstate.edu/home" alt="Leadership academy page link"> 
+									I encourage you to learn more about the Leadership academy
+									by exploring their site.
+									<a href="http://leadership.engr.oregonstate.edu/home" alt="Leadership academy page link">
 										Leadership Academy
 									</a>
-									<br>
-									Check out pictures from our trip to Amazon, Boeing, Microsoft, 
-									and McKinstry in Seattle. 
-									<a href="http://leadership.engr.oregonstate.edu/image-album/2016-seattle-trip" 
-										target="_blank" 
-										alt="link to seattle trip pictures">
-										Seattle Pictures
-									</a>
-
 								</p>
 								<button class="btn btn-primary" data-dismiss="modal" type="button">
 									<i class="fa fa-times"></i>
@@ -526,216 +874,156 @@
 			</div>
 		</div>
 	</div>
-	<!-- Quack Hacks -->
-	<div class="projects-modal modal fade" id="quackHacks" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl"></div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 mx-auto">
-							<div class="modal-body">
-								<!-- Project Details Go Here -->
-								<h2>Quack Hacks</h2>
-								<p class="item-intro text-muted">
-									Developed a 2-D top down shooter game 
-									during a three day hackathon
-								</p>					
-								<img class="img-fluid d-block mx-auto" src="images/modals/quackHacks-full.png" alt="">
-								<div>
-									<p class="text-muted">
-										<i class="fa fa-quote-left" aria-hidden="true"></i>
-										118 college students participated from 6 states (OR, WA, CA, CO, IN, MA), 
-										14 universities and representing 16 different majors. Over 100+ high school 
-										students, community &amp; business leaders engaged in our weekend-long event.
-										<i class="fa fa-quote-right" aria-hidden="true"></i>
-										<cite class="blockquote-footer" title="Source Title">quakhack.io</cite>
-									</p>
-									Quack Hacks was a three day gaming hackathon that was hosted by the 
-									University of Oregon. I was part of a five-person team that designed and implemented a 
-									marketable 2-D top down shooter game.
-								</div>
-								
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
-									<i class="fa fa-times"></i>
-									Close Project
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-		<!-- One-Time-Pad Encryption -->
-	<div class="projects-modal modal fade" id="OTP" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl"></div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 mx-auto">
-							<div class="modal-body">
-								<!-- Project Details Go Here -->
-								<h2>One-Time-Pad Encryption</h2>
-								<p class="item-intro text-muted">Implemented a client-server OTP encryption service</p>								
-								<img class="img-fluid d-block mx-auto" src="images/modals/otpEncryption-full.png" alt="">
-								<p>
-									I created five small programs responsible for encrypting and decrypting text.
-									The programs emulate a client-server architecture where the <i>encrypt</i> program connects to the
-									<i>decrypt</i> program via network sockets. When the <i>encrypt</i> program is 
-									sent plaintext it generates a random key using the standard UNIX randomization methods to 
-									encrypt the plaintext. When the encryption is done it sends back the ciphertext to the caller. 
-									When the <i>decrypt</i> program is sent ciphertext and the generated key it returns the decrypted plaintext.
-								</p>
-								
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
-									<i class="fa fa-times"></i>
-									Close Project
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Food Delivery Site -->
-	<div class="projects-modal modal fade" id="foodDelivery" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl"></div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 mx-auto">
-							<div class="modal-body">
-								<!-- Project Details Go Here -->
-								<h2>Food Delivery Site</h2>
-								<p class="item-intro text-muted">Created a mini Yelp for Corvallis restaurants that deliver</p>								
-								<img class="img-fluid d-block mx-auto" src="images/modals/foodDelivery-full.png" alt="">
-								<p>
-									As part of a two person team I built a website that lists all 
-									currently open Corvallis restaurants and their information if they deliver. Once a user creates an 
-									account and logs in they can scroll through the restaurant cards to look at photos of meals, 
-									read reviews, rate dishes, upload photos of their meals, and leave reviews
-									for restaurants. All data is stored in a MySQL database that I designed.
- 								</p>
-								
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
-									<i class="fa fa-times"></i>
-									Close Project
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Rock Paper Scissors -->
-	<div class="projects-modal modal fade" id="rps" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl"></div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 mx-auto">
-							<div class="modal-body">
-								<!-- Project Details Go Here -->
-								<h2>Rock, Paper, Scissors</h2>
-								<p class="item-intro text-muted">Created a Rock, Paper, Scissors 
-									game with computer intelligence</p>
-								<img class="img-fluid d-block mx-auto" src="images/modals/rps-full.png" alt="">
-								<p>
-									Utilized file I/O in a C++ OOP Rock, Paper, Scissors project 
-									where the computer has a predictive capabilities. The user plays 
-									Rock, Paper, Scissors against the computer, with the user's move 
-									being outputted to a text file. The computer gets smarter 
-									as the game progresses by predicting the user’s next moved 
-									based on the analysis of previous patterns.
-								</p>
-								
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
-									<i class="fa fa-times"></i>
-									Close Project
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Sound Tunnel -->
-	<div class="projects-modal modal fade" id="soundTunnel" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl"></div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 mx-auto">
-							<div class="modal-body">
-								<!-- Project Details Go Here -->
-								<h2>Sound Tunnel</h2>
-								<p class="item-intro text-muted">Created a mini YouTube from scratch 
-									with a team of five
-								</p>
-								<img class="img-fluid d-block mx-auto" src="images/modals/soundTunnel-full.png" alt="">
-								<p>
-									As part of a five-person team I built a mini YouTube - Sound Tunnel.
-									Logged in users can choose a genre which is represented by a circle that grows
-									according to popularity. That choice takes them to a similar set of sub-genres. 
-									Once a genre and sub-genre are chosen users can scroll through the thumbnail slider 
-									or the song list to choose a music video to view. The site also gives users the 
-									ability to upload new videos.
-								</p>
-								<p> 
-									This was my first real programming project. Being naive freshman, we built this
-									site completely from scratch. Meaning no Bootstrap or other styling packages, no external 
-									libraries installed, no task runners, and even no version control system!
-								</p>
-								
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
-									<i class="fa fa-times"></i>
-									Close Project
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
 
 
 
 
 
 <!-- Work Experience Modals -->
-	<!-- Autodesk San Francisco Internship -->
-	<div class="projects-modal modal fade" id="autodeskSanFran" tabindex="-1" role="dialog" aria-hidden="true">
+	<!-- OSU Teaching Assistant -->
+	<div class="projects-modal modal fade" id="osuTA" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2>Teaching Assistant</h2>
+								<p class="item-intro text-muted">Helped students succeed
+									in their introductory computer science classes
+								</p>
+								<img class="img-fluid d-block mx-auto" src="images/modals/brainstormTA-full.jpg" alt="">
+								<div class="row">
+									<b>Technologies:</b>
+									<span class="badge badge-pill badge-info m-1">C&#43;&#43;</span>
+									<span class="badge badge-pill badge-info m-1">Python</span>
+								</div>
+								<hr>
+								<p>
+									As a teaching assistant I taught labs and hosted recitations
+									where I helped students understand fundamental programming
+									concepts. Twice a week I held office hours where I helped students
+									with questions regarding concepts covered in class, errors in their code, and
+									design choices. I regularly met with the professor and other TAs
+									to collaboratively discuss improvements to the curriculum and
+									what could be done to better the students' learning.
+								</p>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+									Close Project
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Autodesk Portland Internship -->
+	<div class="projects-modal modal fade" id="autodeskPortland" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2>Project Prospector</h2>
+								<p class="item-intro text-muted">
+									Using archived designs similar in shape to
+									automatically run simulations behind the scenes
+								</p>
+								<img class="img-fluid d-block mx-auto" src="images/modals/autoChairSim-full.png" alt="">
+								<div class="row">
+									<b>Technologies:</b>
+									<span class="badge badge-pill badge-info m-1">Python</span>
+								</div>
+								<hr>
+								<p >
+									At Autodesk, I worked in the Strategy and Research department under Patti Vrobel,
+									Distinguished Research Engineer. We tackled a thin vertical into the idea of
+									the computer as a collaborator as it applies to simulation.
+								</p>
+								<p>
+										In the mechanical realm before designs can be manufactured and
+										turned into products, they must first be simulated to assure
+										the design meets the product's requirements. However,
+										unless they are familiar with
+										that product’s mechanics, they don’t know how to correctly
+										set up the constraints and loads. Even if they get the
+										constraints and loads set correctly most won’t know how
+										to interpret the results. Because of this, many times
+										minor designs are shipped off to the simulation analyst
+										to be professionally tested. The simulation analyst will
+										run the simulation, interpret the results, and then send
+										the design back to the designer with critiques. Involving
+										a simulation analyst often creates a bottleneck in process
+										design. Not to mention, for minor designs this is a waste
+										of company resources as the simulation analyst should be
+										applying their knowledge to more complex designs.
+								</p>
+								<p >
+									In collaboration with Patti Vrobel and my team at Autodesk,
+									I designed and implemented a working prototype, Project Prospector,
+									that runs in Autodesk’s Fusion 360 and attempts to solve this
+									problem. Prospector automatically sets up and runs simulation
+									in the background while the user is designing.
+								</p>
+								<p >
+									Here's a high level overview of how Prospector works. The user is
+									designing in Fusion 360. Behind the scenes Prospector scans
+									their design, queries Design Graph (Autodesk's similarity tool)
+									for similar parts and downloads
+									them. Prospector then scans those files for past simulation studies
+									and uses that info to automatically setup and run the simulation on
+									the current design in the background. Imagine a chair being designed
+									in Fusion 360. Prospector takes a snapshot of the design, ships it off
+									to Design Graph which returns similar looking chairs. Those similar
+									chairs are then mined for past simulation studies. Let’s say that
+									Prospector came back and found that ChairSim1 was the best choice
+									for the user's design. Then Prospector would prepare the user’s chair
+									design for simulation using the info from ChairSim1. Once the simulation
+									is done it is then shown to the designer. All of this is done behind the
+									scene without user interaction.
+								</p>
+								<p >
+									In the future, if we could filter the simulation’s contours
+									to something that is easier for the designer to understand, we could
+									increase a company’s productivity tremendously by cutting off the
+									simulation analyst bottleneck. By shortening the time to manufacture,
+									products get to market faster, increasing company revenues. Prospector
+									allows the designer to design, the simulation analyst to simulate complex
+									designs, and the computer to be used to its full advantage. By the end of the
+									internship we had an awesome working prototype acting as a spark to kindle the
+									innovation behind the computer as a collaborator, opening the eyes of many.
+								</p>
+
+							</div>
+							<button class="btn btn-primary" data-dismiss="modal" type="button">
+								<i class="fa fa-times"></i>
+								Close Project
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Autodesk San Francisco 17 Internship -->
+	<div class="projects-modal modal fade" id="autodeskSanFran17" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="close-modal" data-dismiss="modal">
@@ -749,71 +1037,80 @@
 							<div class="modal-body">
 								<!-- Project Details Go Here -->
 								<h2>Form Builder</h2>
-								<p class="item-intro text-muted">Worked on creating an 
+								<p class="item-intro text-muted">Worked on creating an
 									onboarding form for Autodesk's Manufacturing Data Service
 								</p>
-								<img class="img-fluid d-block mx-auto" src="images/modals/cloudMDS-full.png" alt="">
-									<span>
-										<b>Disclaimer:</b> The Manufacturing Data Service 
-										(MDS) is much more than described below. 
-										I’m solely stating pieces of it to give 
-										context to my contributions.
-									</span>
-									<hr>
+								<img class="img-fluid d-block mx-auto" src="images/modals/sanFran17-full.jpg" alt="">
+								<div class="row">
+									<b>Technologies:</b>
+									<span class="badge badge-pill badge-info m-1">AngularJS</span>
+									<span class="badge badge-pill badge-info m-1">JavaScript</span>
+									<span class="badge badge-pill badge-info m-1">HTML</span>
+									<span class="badge badge-pill badge-info m-1">Bootstrap</span>
+									<span class="badge badge-pill badge-info m-1">CSS</span>
+								</div>
+								<span>
+									<b>Disclaimer:</b> The Manufacturing Data Service
+									(MDS) is much more than described below.
+									I’m solely stating pieces of it to give
+									context to my contributions.
+								</span>
+								<br>
+								<hr>
 									<p>
-										The current way internal Autodesk teams and Autodesk 
-										partners are saving materials and machine data has 
-										some problems. To upload this data, they must manually 
-										create a library and outline what structure the data 
-										must follow to be uploaded into the library. Once the 
-										library is created they need to structure their data 
-										to match the schema specified by the library. Then they 
-										write code to upload it to their newly created library. 
-										As you might have guessed, users need to be technically 
-										savvy to do this. 
+										The current way internal Autodesk teams and Autodesk
+										partners are saving materials and machine data has
+										some problems. To upload this data, they must manually
+										create a library and outline what structure the data
+										must follow to be uploaded into the library. Once the
+										library is created they need to structure their data
+										to match the schema specified by the library. Then they
+										write code to upload it to their newly created library.
+										As you might have guessed, users need to be technically
+										savvy to do this.
 									</p>
 									<p>
-										Another problem that arises is the lack of versioning 
-										and access control. For example, imagine team A creates 
-										library "Steel" and for the next three years they add new 
-										facets to it. Then team B comes along and wants to utilize 
-										a portion of that library. To do that team B would have to 
-										import team A’s entire "Steel" library, even if they don’t 
-										need all the newly added facets. Not to mention every 
-										additional facet team B adds to "Steel" would affect all 
-										other teams utilizing that same library since they're 
-										pulling from the same place. That’s where the Manufacturing 
+										Another problem that arises is the lack of versioning
+										and access control. For example, imagine team A creates
+										library "Steel" and for the next three years they add new
+										facets to it. Then team B comes along and wants to utilize
+										a portion of that library. To do that team B would have to
+										import team A’s entire "Steel" library, even if they don’t
+										need all the newly added facets. Not to mention every
+										additional facet team B adds to "Steel" would affect all
+										other teams utilizing that same library since they're
+										pulling from the same place. That’s where the Manufacturing
 										Data Service (MDS) comes in.
 									</p>
 									<p>
-										MDS solves these problems by creating versioning and access 
-										control so each team can maintain their own library while still 
-										making a global registry for other teams to pick and choose what 
-										they would like from it. MDS also has a feature that allows for 
-										queries such as "I'm trying to 3-D print a part with this 
-										constraint. Give me a machine and material that would be 
-										able to do this for me." This tremendously boosts efficiency 
-										for internal teams and creates a mini marketplace for external 
-										partners that have uploaded their data. MDS also solves the 
-										obstacle of needing to be technically savvy and knowing what 
-										JSON schema is! This is solved by the Form Builder, which is 
+										MDS solves these problems by creating versioning and access
+										control so each team can maintain their own library while still
+										making a global registry for other teams to pick and choose what
+										they would like from it. MDS also has a feature that allows for
+										queries such as "I'm trying to 3-D print a part with this
+										constraint. Give me a machine and material that would be
+										able to do this for me." This tremendously boosts efficiency
+										for internal teams and creates a mini marketplace for external
+										partners that have uploaded their data. MDS also solves the
+										obstacle of needing to be technically savvy and knowing what
+										JSON schema is! This is solved by the Form Builder, which is
 										where I spent my time.
 									</p>
 									<p>
-										Form Builder is a web application that allows a user to create 
-										a data onboarding form through a quick and easy user interface. 
-										The form creator simply chooses which schemas/libraries they 
-										would like to import, selects the required and optional questions 
-										from those imports, arranges the questions, blocks, and tabs in 
-										the order they want them in, and optionally chooses input 
-										restrictions. Once that is all said and done- voila the form is 
-										created. Now the form creator can invite team members or clients 
-										to the form and start uploading data to MDS by simply filling 
+										Form Builder is a web application that allows a user to create
+										a data onboarding form through a quick and easy user interface.
+										The form creator simply chooses which schemas/libraries they
+										would like to import, selects the required and optional questions
+										from those imports, arranges the questions, blocks, and tabs in
+										the order they want them in, and optionally chooses input
+										restrictions. Once that is all said and done- voila the form is
+										created. Now the form creator can invite team members or clients
+										to the form and start uploading data to MDS by simply filling
 										out the form!
 									</p>
 									<p>
 										<b>I was in charge of…</b>
-										<div class="align-normal">	
+										<div class="align-normal">
 											<div class="bs-callout-left bs-callout-main-theme">
 												Form validation for the entire Form Builder application – form creator view and end user view
 											</div>
@@ -847,142 +1144,12 @@
 												Add Display Logic
 											</div>
 										</div>
-										Display logic gives the form creator the ability to add logic 
-										to a question like <i>“If answer A is chosen then hide tab 2 
+										Display logic gives the form creator the ability to add logic
+										to a question like <i>“If answer A is chosen then hide tab 2
 										and show question 5.”</i>
 									</p>
 								<p>
-								
-								</p>
-								<button class="btn btn-primary" data-dismiss="modal" type="button">
-									<i class="fa fa-times"></i>
-									Close Project
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Autodesk Portland Internship -->
-	<div class="projects-modal modal fade" id="autodeskPortland" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl"></div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 mx-auto">
-							<div class="modal-body">
-								<!-- Project Details Go Here -->
-								<h2>Project Prospector</h2>
-								<p class="item-intro text-muted">
-									Using archived designs similar in shape to 
-									automatically run simulations behind the scenes
-								</p>
-								<img class="img-fluid d-block mx-auto" src="images/modals/autoChairSim-full.png" alt="">
-								<p >
-									At Autodesk, I worked in the Strategy and Research department under Patti Vrobel, 
-									Distinguished Research Engineer. We tackled a thin vertical into the idea of 
-									the computer as a collaborator as it applies to simulation. 
-								</p>
-								<p>
-										In the mechanical realm before designs can be manufactured and 
-										turned into products, they must first be simulated to assure 
-										the design meets the product's requirements. However,
-										unless they are familiar with 
-										that product’s mechanics, they don’t know how to correctly 
-										set up the constraints and loads. Even if they get the 
-										constraints and loads set correctly most won’t know how 
-										to interpret the results. Because of this, many times 
-										minor designs are shipped off to the simulation analyst 
-										to be professionally tested. The simulation analyst will 
-										run the simulation, interpret the results, and then send 
-										the design back to the designer with critiques. Involving 
-										a simulation analyst often creates a bottleneck in process 
-										design. Not to mention, for minor designs this is a waste 
-										of company resources as the simulation analyst should be 
-										applying their knowledge to more complex designs.
-								</p>
-								<p >
-									In collaboration with Patti Vrobel and my team at Autodesk, 
-									I designed and implemented a working prototype, Project Prospector, 
-									that runs in Autodesk’s Fusion 360 and attempts to solve this 
-									problem. Prospector automatically sets up and runs simulation 
-									in the background while the user is designing.
-								</p>
-								<p >
-									Here's a high level overview of how Prospector works. The user is 
-									designing in Fusion 360. Behind the scenes Prospector scans 
-									their design, queries Design Graph (Autodesk's similarity tool) 
-									for similar parts and downloads 
-									them. Prospector then scans those files for past simulation studies 
-									and uses that info to automatically setup and run the simulation on 
-									the current design in the background. Imagine a chair being designed 
-									in Fusion 360. Prospector takes a snapshot of the design, ships it off 
-									to Design Graph which returns similar looking chairs. Those similar 
-									chairs are then mined for past simulation studies. Let’s say that 
-									Prospector came back and found that ChairSim1 was the best choice 
-									for the user's design. Then Prospector would prepare the user’s chair 
-									design for simulation using the info from ChairSim1. Once the simulation 
-									is done it is then shown to the designer. All of this is done behind the 
-									scene without user interaction.
-								</p>
-								<p >
-									This project espoused the idea of computer as collaborator in the simulation 
-									realm. In the future, if we could filter the simulation’s contours 
-									to something that is easier for the designer to understand, we could 
-									increase a company’s productivity tremendously by cutting off the 
-									simulation analyst bottleneck. By shortening the time to manufacture, 
-									products get to market faster, increasing company revenues. Prospector 
-									allows the designer to design, the simulation analyst to simulate complex 
-									designs, and the computer to be used to its full advantage. By the end of the 
-									internship we had an awesome working prototype acting as a spark to kindle the 
-									innovation behind the computer as a collaborator, opening the eyes of many.
-								</p>
-								
-							</div>
-							<button class="btn btn-primary" data-dismiss="modal" type="button">
-								<i class="fa fa-times"></i>
-								Close Project
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- OSU Teaching Assistant -->
-	<div class="projects-modal modal fade" id="osuTA" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl"></div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 mx-auto">
-							<div class="modal-body">
-								<!-- Project Details Go Here -->
-								<h2>Teaching Assistant</h2>
-								<p class="item-intro text-muted">Helped students succeed 
-									in their introductory computer science classes
-								</p>
-								<img class="img-fluid d-block mx-auto" src="images/modals/brainstormTA-full.jpg" alt="">
-								<p>
-									As a teaching assistant I taught labs and hosted recitations 
-									where I helped students understand fundamental programming 
-									concepts. Twice a week I held office hours where I helped students 
-									with questions regarding concepts covered in class, errors in their code, and
-									design choices. I regularly met with the professor and other TAs 
-									to collaboratively discuss improvements to the curriculum and 
-									what could be done to better the students' learning.
+
 								</p>
 								<button class="btn btn-primary" data-dismiss="modal" type="button">
 									<i class="fa fa-times"></i>
@@ -996,6 +1163,87 @@
 		</div>
 	</div>
 
+	<!-- Autodesk San Francisco 18 Internship -->
+	<div class="projects-modal modal fade" id="autodeskSanFran18" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-dismiss="modal">
+					<div class="lr">
+						<div class="rl"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="modal-body">
+								<!-- Project Details Go Here -->
+								<h2>Recommendation Engine</h2>
+								<p class="item-intro text-muted">
+									Implemented a content recommendation engine for Autodesk's Community Service
+								</p>
+								<img class="img-fluid d-block mx-auto" src="images/modals/sanFran18-full.jpg" alt="">
+								<div class="row">
+									<b>Technologies:</b>
+									<span class="badge badge-pill badge-info m-1">Node.js</span>
+									<span class="badge badge-pill badge-info m-1">Express</span>
+									<span class="badge badge-pill badge-info m-1">Python</span>
+									<span class="badge badge-pill badge-info m-1">Jupyter Notebook</span>
+									<span class="badge badge-pill badge-info m-1">Docker</span>
+									<span class="badge badge-pill badge-info m-1">LightFM</span>
+									<span class="badge badge-pill badge-info m-1">AWS</span>
+								</div>
+								<hr>
+									<p>
+										Summer 2018 I was on Autodesk’s Cloud Platforms, Manufacturing
+										and Factory Services team. The team had built a Community service,
+										where, in one sentence, was a service that applications can use to
+										add Likes, Comments, and Follow Publisher functionality. i.e. a
+										cloud service that can add a social media layer to an application.
+										I was tasked with designing and implementing a recommendation engine
+										for the cloud service. Just like Netflix has “Movies you might also
+										like” and Amazon has “People who bought this also bought”, the
+										recommendation engine I created suggests content for users.
+									</p>
+									<p>
+										This was my first exposure to machine learning, so a lot of research
+										and learning was done on my end. My research lead me to using Factorization
+										Machines as the machine learning algorithm. I used an open source
+										project called <i>LightFM</i> to handle the Factorization Machine
+										heavy lifting for me.
+									</p>
+
+									<p>
+										<b>I was in charge of…</b>
+										<div class="align-normal">
+											<div class="bs-callout-left bs-callout-main-theme">
+												Designing the <i>User to Suggestions</i> pipleine
+											</div>
+											<div class="bs-callout-left bs-callout-main-theme">
+												Researching Machine Learning libraries and algorithms
+											</div>
+											<div class="bs-callout-left bs-callout-main-theme">
+												Aggregating and cleaning the data
+											</div>
+											<div class="bs-callout-left bs-callout-main-theme">
+												Implementing the API for gathering and cleaning data,
+												and retrieving suggestions
+											</div>
+											<div class="bs-callout-left bs-callout-main-theme">
+												Deploying the Node/Express server on AWS EC2
+											</div>
+										</div>
+									</p>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+									Close Project
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -1009,11 +1257,13 @@
 	<!-- Plugin JavaScript -->
 	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-	<!-- Contact form JavaScript -->
-	<script src="js/jqBootstrapValidation.js"></script>
-
-	<!-- Custom scripts for this template -->
 	<script src="js/personal.min.js"></script>
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.countTo.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/wow.min.js"></script>
+  <script> new WOW().init(); </script>
 
 </body>
 

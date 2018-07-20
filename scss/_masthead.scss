@@ -2,6 +2,7 @@
 
 
 header.masthead {
+  height: 100vh;
   text-align: center;
   color: $green-dark;
   text-shadow:
@@ -9,14 +10,14 @@ header.masthead {
     1px -1px 0 $theme-primary,
     -1px 1px 0 $theme-primary,
     1px 1px 0 $theme-primary;
-  background-image: url('../images/mtHood.jpg');
+  background-image: url('../images/headerImg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center 33%;
+  background-position: center 50%;
 
   @include background-cover;
   .intro-text {
-    padding-top: 150px;
+    padding-top: 450px;
     padding-bottom: 100px;
     .intro-lead-in {
       font-size: 22px;
@@ -37,7 +38,7 @@ header.masthead {
 @media(min-width:768px) {
   header.masthead {
     .intro-text {
-      padding-top: 300px;
+      padding-top: 450px;
       padding-bottom: 200px;
       .intro-lead-in {
         font-size: 40px;
