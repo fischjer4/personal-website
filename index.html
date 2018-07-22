@@ -2,6 +2,48 @@
 <html lang="en">
 
 <head>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NKPCXFV');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102279796-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-102279796-1');
+
+		function getTimeOnPage(){
+			// Feature detects Navigation Timing API support.
+			if (window.performance) {
+			  // Gets the number of milliseconds since page load
+			  // (and rounds the result since the value must be an integer).
+			  var timeSincePageLoad = Math.round(performance.now());
+
+			  // Sends the timing event to Google Analytics.
+			  gtag('event', 'timing_complete', {
+			    'name': 'time on page',
+			    'value': timeSincePageLoad,
+			    'event_label': 'Time on Page'
+			  });
+			}
+		}
+
+		function viewedModal(modalName){
+			gtag('event', 'select_content', {
+			  "content_type": modalName
+			});
+		}
+
+		window.onclose = getTimeOnPage;
+
+		</script>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,26 +69,14 @@
 	<!-- Custom styles for this template -->
 	<link href="css/personal.css" rel="stylesheet">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102279796-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-102279796-1');
-
-	  window.onbeforeunload = closingCode;
-		function closingCode(){
-			console.log("Made it");
-			ga('send', 'pageview');
-			return null;
-		}
-	</script>
-
 </head>
 
 <body id="page-top">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKPCXFV"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
 	<!-- Preloader -->
 	<div id="preloader">
 		<div id="status"></div>
@@ -68,22 +98,22 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#whoIAm">Who I Am</a>
+						<a class="nav-link js-scroll-trigger" id="whoIAmNavBar" href="#whoIAm">Who I Am</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#education">Education</a>
+						<a class="nav-link js-scroll-trigger" id="educationNavBar" href="#education">Education</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#workExperience">Work Experience</a>
+						<a class="nav-link js-scroll-trigger" id="workExpNavBar"href="#workExperience">Work Experience</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#projectsAndInvolvement">Projects &amp; Involvement</a>
+						<a class="nav-link js-scroll-trigger" id="projectsNavBar"href="#projectsAndInvolvement">Projects &amp; Involvement</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
+						<a class="nav-link js-scroll-trigger" id="resumeNavBar"href="#resume">Resume</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+						<a class="nav-link js-scroll-trigger" id="contactNavBar" href="#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -143,6 +173,7 @@
 							<li class="list-inline-item">
 								<a
 									target="_blank"
+									id="linkedIn"
 									href="https://www.linkedin.com/in/jeremyjfischer/">
 									<i class="fa fa-linkedin"></i>
 								</a>
@@ -230,7 +261,7 @@
 									<p class="text-muted">In my sophomore year of college I was a
 										teaching assistant for the computer sciences introductory courses.
 									</p>
-									<a class="btn btn-md" data-toggle="modal" href="#osuTA">Learn More</a>
+									<a class="btn btn-md" data-toggle="modal" id="osuTA" href="#osuTA">Learn More</a>
 								</div>
 							</div>
 						</li>
@@ -250,7 +281,7 @@
 									<p class="text-muted">I worked in the <i>Strategy and Research</i> team
 										where I created a simulation assistant with a teammate.
 									</p>
-									<a class="btn btn-md" data-toggle="modal" href="#autodeskPortland">Learn More</a>
+									<a class="btn btn-md" data-toggle="modal" id="adskPortland" href="#autodeskPortland">Learn More</a>
 
 								</div>
 							</div>
@@ -271,7 +302,7 @@
 									<p class="text-muted">As a member of the <i>Digital Manufacturing Group Cloud Services</i> team,
 										I worked on the Form Builder for Autodesk's Manufacturing Data Service
 									</p>
-									<a class="btn btn-md" data-toggle="modal" href="#autodeskSanFran17">Learn More</a>
+									<a class="btn btn-md" data-toggle="modal" id="adskSF17" href="#autodeskSanFran17">Learn More</a>
 								</div>
 							</div>
 						</li>
@@ -291,7 +322,7 @@
 									<p class="text-muted">As a member of the <i>Cloud Platform, Manufacturing and Factory Services</i> team,
 										I implemented a content recommendation engine for Autodesk's Community Service
 									</p>
-									<a class="btn btn-md" data-toggle="modal" href="#autodeskSanFran18">Learn More</a>
+									<a class="btn btn-md" data-toggle="modal" id="adskSF18" href="#autodeskSanFran18">Learn More</a>
 								</div>
 							</div>
 						</li>
@@ -320,7 +351,7 @@
 				</div>
 
 				<div class="col-md-4 col-sm-6 projects-item animated wow bounceInUp">
-					<a class="projects-link" data-toggle="modal" href="#smartFarm">
+					<a class="projects-link" data-toggle="modal" id="smartFarm" href="#smartFarm">
 						<div class="project-item">
 							<div class="project-item-preview">
 								<img class="img-fluid" src="images/projects/smartFarm-thumb.jpg" alt="">
@@ -337,7 +368,7 @@
 				</div>
 
 				<div class="col-md-4 col-sm-6 projects-item animated wow bounceInDown" >
-					<a class="projects-link" data-toggle="modal" href="#kora">
+					<a class="projects-link" data-toggle="modal" id="kora" href="#kora">
 						<div class="project-item">
 							<div class="project-item-preview">
 								<img class="img-fluid" src="images/projects/kora-thumb.jpg" alt="">
@@ -354,7 +385,7 @@
 				</div>
 
 				<div class="col-md-4 col-sm-6 projects-item animated wow bounceInUp">
-					<a class="projects-link" data-toggle="modal" href="#translator">
+					<a class="projects-link" data-toggle="modal" id="translator" href="#translator">
 						<div class="project-item">
 							<div class="project-item-preview">
 								<img class="img-fluid" src="images/projects/translator-thumb.png" alt="">
@@ -368,7 +399,7 @@
 				</div>
 
 				<div class="col-md-4 col-sm-6 projects-item animated wow bounceInLeft">
-					<a class="projects-link" data-toggle="modal" href="#sentimentAnalysis">
+					<a class="projects-link" data-toggle="modal" id="sentiAnlys" href="#sentimentAnalysis">
 						<div class="project-item">
 							<div class="project-item-preview">
 								<img class="img-fluid" src="images/projects/sentimentAnalysis-thumb.jpg" alt="">
@@ -384,7 +415,7 @@
 				</div>
 
 				<div class="col-md-4 col-sm-6 projects-item animated wow bounceInUp">
-					<a class="projects-link" data-toggle="modal" href="#bestFitSlob">
+					<a class="projects-link" data-toggle="modal" id="slob" href="#bestFitSlob">
 						<div class="project-item">
 							<div class="project-item-preview">
 								<img class="img-fluid" src="images/projects/bestFit-thumb.png" alt="">
@@ -402,7 +433,7 @@
 				</div>
 
 				<div class="col-md-4 col-sm-6 projects-item wow animated bounceInRight">
-					<a class="projects-link" data-toggle="modal" href="#leadershipAcademy">
+					<a class="projects-link" data-toggle="modal" id="LA" href="#leadershipAcademy">
 						<div class="project-item">
 							<div class="project-item-preview">
 								<img class="img-fluid" src="images/projects/leadershipAca-thumb.png" alt="">
