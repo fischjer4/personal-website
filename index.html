@@ -34,13 +34,7 @@
 			  });
 			}
 		}
-
-		function viewedModal(modalName){
-			gtag('event', 'select_content', {
-			  "content_type": modalName
-			});
-		}
-
+		/* Get time user was on page by sending page view when they leave */
 		window.onclose = getTimeOnPage;
 
 		</script>
